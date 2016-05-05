@@ -1,0 +1,15 @@
+{
+  "name": "ungonnak-angular-utils",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ungonnak/angular-utils.git"
+  },
+  "devDependencies": {
+    "angular": "^1.5.5",
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-html2js": "^0.3.6"
+  }
+}
