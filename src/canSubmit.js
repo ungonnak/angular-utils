@@ -36,7 +36,8 @@ angular.module('uau.canSubmit', [])
             continue;
           }
 
-          if (form[item] && form[item].$setTouched) {
+          if (form[item] && form[item].$setTouched && form[item].$validate) {
+            form[item].$validate();
             form[item].$setTouched();
             delete(form[item].$error.server);
           }

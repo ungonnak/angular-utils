@@ -17,6 +17,8 @@ angular.module('uau.hasFeedback', [])
       function evaluate(target) {
         if (!target) return;
 
+        resetClasses();
+
         if (target.$invalid && (target.$touched || target.$dirty)) {
           element.addClass('has-error');
         } else if (target.$valid) {

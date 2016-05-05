@@ -23,8 +23,7 @@ angular.module('uau.helpers', [])
       }
 
       function processFormField(field, message) {
-        if (
-          field &&
+        if (field &&
           field.hasOwnProperty('$invalid') &&
           field.hasOwnProperty('$error')
         ) {

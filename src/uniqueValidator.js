@@ -7,13 +7,14 @@ angular.module('uau.uniqueValidator', [])
     };
 
     function link($scope, node, attrs, ngModelController) {
-      if (!ngModel) return;
+      if (!ngModelController) return;
 
       var timeout;
+      var element = angular.element(node);
 
       ngModelController.$validators.unique = validateUnique;
 
-      attrs.$observe('required', function() {
+      attrs.$observe('unique', function() {
         ngModelController.$validate();
       });
 
